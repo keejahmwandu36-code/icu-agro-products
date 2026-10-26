@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+    --color-icu-dark: #1B4D3E;
+    --color-icu-green: #6DBE45;
+    --color-icu-light: #F5FBF2;
+    --color-icu-accent: #C8E6A0;
+
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+    @apply bg-[#1B4D3E] text-white px-6 py-3 rounded-lg font-medium
+           border-2 border-[#1B4D3E]
+           hover:bg-[#143a2f] hover:border-[#6DBE45]
+           transition;
+}
+
+.btn-accent {
+    @apply bg-[#6DBE45] text-white px-6 py-3 rounded-lg font-medium
+           border-2 border-[#1B4D3E]
+           hover:bg-[#5aa838] hover:border-[#1B4D3E]
+           transition;
+}
+
+.btn-outline {
+    @apply bg-transparent text-[#1B4D3E] px-6 py-3 rounded-lg font-medium
+           border-2 border-[#1B4D3E]
+           hover:bg-[#1B4D3E] hover:text-white
+           transition;
+}
+
+/* ---------- Layout ---------- */
+.container-icu {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* ---------- Borders ---------- */
+.border-brand {
+    border: 2px solid #1B4D3E;
+}
+
+.border-brand-green {
+    border: 2px solid #6DBE45;
+}
+
+.border-brand-soft {
+    border: 1px solid rgba(27, 77, 62, 0.15);
+}
+
+/* ---------- Cards ---------- */
+.card-icu {
+    @apply bg-white rounded-xl p-6
+           border-2 border-[#1B4D3E]
+           shadow-sm hover:shadow-md
+           transition;
+}
+
+.card-icu-green {
+    @apply bg-white rounded-xl p-6
+           border-2 border-[#6DBE45]
+           shadow-sm hover:shadow-md
+           transition;
+}
+
+/* ---------- Hero ---------- */
+.hero-frame {
+    @apply rounded-2xl p-10
+           border-2 border-[#6DBE45]
+           bg-white;
+}
+
+/* ---------- Logo ---------- */
+.logo-frame {
+    @apply rounded-lg p-1
+           border-2 border-[#1B4D3E]
+           bg-white;
+}
